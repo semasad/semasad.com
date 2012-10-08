@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	font-family: Helvetica;
+
+}
+
+header {
+
+	background-color: #00618C;
+	height: 50px;
+	width: 100%;
+	margin: 0;
+}
+
+header .header_section_right {
+
+	border-bottom: 50px solid #004F75;
+	border-left: 50px solid transparent;
+	border-right: 0px solid transparent;
+	height: 0;
+	width: 100px;
+	float: right;
+	margin: 0;
+}
+
+header h1 {
+
+	margin: 0;
+	padding: 5px;
+}
+
+hgroup {
+
+	background-color: #cecece;
+	width: 95%;
+	height: 500px;
+	margin: 0 auto;
+	padding: 10px;
+
+}
+
+
+
+hgroup img {
+
+	width: 800px;
+	height: 400px;
+	margin: 50px;
+	position: absolute;
+	float: left;
+}
+
+hgroup h2 {
+
+	width: 200px;
+	position: absolute;
+	float: right;
+	display: block;
+
+}
+
+hgroup p {
+
+	float: right;
+	width: 400px;
+	height: 80%;
+	margin: 100px 0;
+}
