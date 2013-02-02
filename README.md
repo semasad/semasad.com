@@ -9,6 +9,8 @@ I make public the code of my web for 2 reasons:
 
 I make it with: HTML (5), CSS (3) and Javascript (jQuery). Is a simple 'static' web.
 
+www.semasad.com
+
 Enjoy!
 
 ===========
