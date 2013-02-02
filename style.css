@@ -217,6 +217,12 @@ footer a:hover {
 	border-radius: 200px;
 	margin: -6em 0 0 0;
 	height: 150px;
+	transition: all 0.8s;
+}
+
+.top_img:hover {
+
+	transform:rotate(360deg);
 }
 
 .certifications_content a {
@@ -350,12 +356,12 @@ footer a:hover {
 @media screen and (max-width: 1300px){
 
 
-
 	#contact h5 {
 
 		font-size: 1.5em;
 	}
 }
+
 @media screen and (max-width: 800px){
 
 	section {
@@ -363,15 +369,28 @@ footer a:hover {
 		width: 70%;
 	}
 
-		aside , footer figure , .social , footer .copyright{
+section .back , section .back_b , section .button , section .button_contact {
+
+		
+		margin: 0.5em auto;
+		max-width: 50%; 
+	}
+
+		aside , footer figure , .social , footer p , section .button_contact{
 
 		display: none;
 	}
 
-		section .button_contact {
+	#contact h2 {
 
-		display: none;
+		font-size: 2.2em;
 	}
+
+	#contact figure img {
+
+		width: 150px;
+	}
+
 }
 
 @media screen and (max-width: 500px){
@@ -387,14 +406,15 @@ footer a:hover {
 		padding:0.5em 1em;
 	}
 
-	aside , footer figure , .social , footer .copyright{
+	aside , footer figure , .social , footer p{
 
 		display: none;
 	}
 	section .back , section .back_b , section .button , section .button_contact {
 
-		display: block;
-		margin: 0.5em 0;
+		
+		margin: 0.5em auto;
+		max-width: 70%; 
 	}
 	section .button_contact {
 
