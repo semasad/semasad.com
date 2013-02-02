@@ -312,9 +312,18 @@ footer a:hover {
 	position: fixed;
 }
 
-.social figure {
+.social figure img {
 
+	color: #6D6E71;
 	margin: 1em 0 0 0;
+	text-decoration: none;
+	transition:margin 0.1s;
+}
+
+.social figure img:hover {
+
+	margin: 0 0 0.2em 0;
+
 }
 
 
@@ -334,12 +343,15 @@ footer a:hover {
 	section .back , section .back_b , section .button {
 
 		letter-spacing: 0;
+		margin: 0.5em auto;
+		max-width: 50%;
 	}
 
 	section .back , section .back_b , section .button , section .button_contact {
 
 		display: block;
-		margin: 0.5em 0;
+		margin: 0.5em auto;
+		max-width: 50%;
 	}
 
 	#contact h2 {
