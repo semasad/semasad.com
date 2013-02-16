@@ -50,15 +50,16 @@ h6 {
 
 	color: #F55B2C;
 	cursor: pointer;
+	display: inline-block;
 	font: 1.5em 'open sans' , Helvetica, Arial;
-	margin: 0;
+	margin: -0.9em 0 1em 0;
 	padding: 2em 0 0 1em;
 	text-transform: uppercase;
+	width: 100px;
 	-webkit-animation: h6 2s infinite;
     -moz-animation: h6 2s infinite;
     -ms-animation: h6 2s infinite;
     -o-animation: h6 2s infinite;
-    width: 100px;
 
 }
 
@@ -134,7 +135,7 @@ section .button , section .button_contact {
 	transition: all 0.1s ease-out;
 }
 
-section .back , section .back_b {
+section .back , section .back_b  , .more{
 
 	background: #F55B2C;
 	border: 3px solid #292929;
@@ -147,7 +148,7 @@ section .back , section .back_b {
 	transition: all 0.1s ease-out;
 }
 
-.button:hover , .button_contact:hover , .back_b:hover , .back:hover{
+.button:hover , .button_contact:hover , .back_b:hover , .back:hover , .more:hover{
 
 	background: #292929;
 	border: 3px solid #F55B2C;
@@ -211,19 +212,42 @@ footer a:hover {
 	text-decoration: none;
 }
 
+#details h2 {
+
+	color:#F55B2C;
+	font: 2em 'open sans', Helvetica, Arial, sans-serif;
+	margin: 0;
+	text-align: left;
+
+}
+
+#details h3 {
+
+	color:#F55B2C;
+	font: 1.2em 'open sans', Helvetica, Arial, sans-serif;
+	margin: 0 0 0.5em 0;
+	text-align: left;
+}
+
 .top_img {
 
 	border: 1px solid #292929;
 	border-radius: 200px;
 	margin: -6em 0 0 0;
 	height: 150px;
-	transition: all 0.8s;
+	transition: all 0.3s ease-out;
 }
 
 .top_img:hover {
 
-	transform:rotate(360deg);
+	transform:rotate(20deg);
 }
+
+#job .top_img:hover , #contact .top_img:hover {
+
+	transform:rotate(-20deg);
+}
+
 
 .certifications_content a {
 
@@ -340,6 +364,7 @@ footer a:hover {
 
 @media screen and (max-width: 900px){
 
+
 	section .back , section .back_b , section .button {
 
 		letter-spacing: 0;
@@ -363,10 +388,19 @@ footer a:hover {
 
 		font-size: 1em;
 	}
+	.more {
+
+		margin: 0.5em auto;
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 1300px){
 
+	section {
+
+		width: 70%;
+	}
 
 	#contact h5 {
 
@@ -381,10 +415,10 @@ footer a:hover {
 		width: 70%;
 	}
 
-section .back , section .back_b , section .button , section .button_contact {
+
+	section .back , section .back_b , section .button , section .button_contact {
 
 		
-		margin: 0.5em auto;
 		max-width: 50%; 
 	}
 
@@ -403,6 +437,12 @@ section .back , section .back_b , section .button , section .button_contact {
 		width: 150px;
 	}
 
+	.more {
+
+		display: block;
+		margin: 0.5em auto;
+	}
+
 }
 
 @media screen and (max-width: 500px){
@@ -413,8 +453,9 @@ section .back , section .back_b , section .button , section .button_contact {
 	}
 
 
-	section .back , section .back_b , section .button {
+	section .back , section .back_b , section .button , .more {
 
+		display: block;
 		padding:0.5em 1em;
 	}
 
@@ -422,9 +463,9 @@ section .back , section .back_b , section .button , section .button_contact {
 
 		display: none;
 	}
-	section .back , section .back_b , section .button , section .button_contact {
+	section .back , section .back_b , section .button , section .button_contact , .more {
 
-		
+		display: block;
 		margin: 0.5em auto;
 		max-width: 70%; 
 	}
@@ -445,6 +486,12 @@ section .back , section .back_b , section .button , section .button_contact {
 	#contact figure img {
 
 		max-width: 80%;
+	}
+
+	.more {
+
+		margin: 0.5em auto;
+		width: 70%;
 	}
 
 
