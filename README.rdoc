@@ -1,27 +1,23 @@
-== README
+== www.semasad.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este es mi sitio web re hecho con Ruby on Rails. Dejo información adicional para los interesados.
 
-Things you may want to cover:
+* Ruby version: 4.0.2
 
-* Ruby version
+* Gemas importantes
 
-* System dependencies
+<tt>
+# Stylus
+gem "stylus", "~> 1.0.1"
 
-* Configuration
+# jQuery
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
 
-* Database creation
+# CoffeeScript
+gem 'coffee-rails', '~> 4.0.0'
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+</tt>
 
 
 Please feel free to use a different markup language if you do not plan to run
