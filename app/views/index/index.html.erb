@@ -1,0 +1,48 @@
+<section>
+
+
+		<nav>
+			<%= image_tag('nav_icon.png') %>
+			<ul>
+				<li><a href="#home" class="home">Inicio</a></li>
+				<li><a href="#reference" class="reference">Referencia</a></li>
+				<li><a href="#contact" class="contact">Contacto</a></li>
+			</ul>
+		</nav>
+		<header>
+			<h1 title="¿Hipster? ... ne">Sebastián Masad</h1>
+		</header>
+		
+		<article id="home">
+			<h2>Sebastián Masad</h2>
+			<h3>Cofundador de Nursoft, front-end, estudiante y geek.</h3>
+		</article>
+
+		<article id="reference">
+			<h2>Referencia</h2>
+
+			<% @contents.each do |content| %>
+      				<%= simple_format(content.text) %>
+    			<% end %>
+			
+			<h6>Habilidades técnicas</h6>
+			<ul>
+				<% @skills.each do |skill| %>
+      				<li><%= skill.name %></li>
+    			<% end %>
+			</ul>
+
+		</article>
+
+		<article id="contact">
+			<h2>Contacto</h2>
+
+			<p>Envíame un mail o contactame por mis redes sociales. </p>
+
+		</article>
+		<aside id="social">
+			<% @socials.each do |social| %>
+      			<a href="<%= social.link %>" style="background:<%= social.color %>"> <%= social.name %> </a>
+    		<% end %>
+		</aside>
+	</section>

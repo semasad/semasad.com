@@ -1,0 +1,344 @@
+
+ // = require_self
+ // = require jquery.ui.all
+
+@import 'variables'
+
+html , body
+	height 90%
+	padding 1em
+
+// < body >
+body
+	background url("bg.jpg")no-repeat
+	background-size cover
+	background-attachment fixed
+	color black
+	font 14px 'open sans'
+	margin 0
+	text-rendering optimizeLegibility
+// < / body >
+
+// < section >
+
+section
+	min-height 90%
+	width 80%
+	padding 6em 1em 1em 1em
+	border .4em solid white
+	margin 0 auto 2em auto
+
+
+// < / section >
+
+// < header >
+
+header
+	width 50%
+	margin 0 auto
+
+	&:after
+		content '~'
+		text-align center
+		margin .1em auto
+		display block
+		color white
+		font-size 3em
+
+	& h1
+		font 2.2em "open sans"
+		margin 0
+		text-align center
+		color white
+		text-transform uppercase
+		letter-spacing .3em
+		font-weight 100
+		padding .3em 0
+		background green_rgba
+		cursor help
+
+// < / header >
+
+// < nav >
+
+nav
+	position absolute
+	margin -2em 0 0 0
+
+	& img
+		width 1.5em
+		cursor pointer
+
+	& ul
+		// null
+
+		& li
+			list-style none
+			font-weight 100
+			padding .5em 0
+			transition .1s padding ease
+
+			&:hover
+				padding .5em 0 .5em .2em
+
+
+			& a
+				color white
+				text-decoration none
+				text-align left
+
+
+// < / nav>
+
+// < article >
+
+article
+	width 45%
+	margin 0 auto
+	color white
+	font-family 'droid serif'
+
+	& h2
+		display none
+
+	& p
+		text-align justify
+		font-size 1.1em
+		line-height 1.3em
+		font-weight 100
+		margin 1em 0
+
+		&:first
+			margin 0
+
+// < / article >
+
+// < #intro >
+#home
+	// null
+
+	& h3
+		padding 0 2.5%
+		font-size 1.5em
+		color white
+		font-family 'droid serif'
+		font-weight 100
+		margin 0
+		text-align center
+
+// < / #intro>
+
+// < #work >
+#reference
+	// null
+
+	& h6
+		font 1.15em "open sans"
+		font-weight 50
+		text-transform uppercase
+		margin 0 auto
+		letter-spacing .2em
+		background green_rgba
+		width 60%
+		text-align center
+		padding .2em 1em
+
+	ul
+		padding 0
+		margin 1em auto
+
+		& li
+			background black_rgba
+			display inline-block
+			list-style none
+			padding .2em 1em
+			margin .2em 0
+			font 0.9em "open sans"
+			border-radius 30px
+			transition .3s background ease
+			cursor default
+
+			&:hover
+				background green_rgba
+
+// < / #work >
+
+
+// < aside >
+
+aside
+	margin 2em auto 0 auto
+	text-align center
+
+	& a
+		color white
+		padding .5em 1em
+		text-decoration none
+		margin 0 .2em
+
+// < / aside >
+
+.ui-tooltip, .arrow:after
+	background black
+
+.ui-tooltip
+	padding 10px 20px
+	color white
+	border-radius 2px
+	width 10%
+	text-align center
+	font 0.9em "open sans"
+
+.arrow
+	width 70px
+	height 16px
+	overflow hidden
+	position absolute
+	left 50%
+	margin-left -35px
+	bottom -16px
+
+	&.top
+		top -16px
+		bottom auto
+
+		&:after
+			bottom -20px
+			top auto
+
+	&.left
+		left 20%
+
+	&:after
+		content ""
+		position absolute
+		left 20px
+		top -20px
+		width 25px
+		height 25px
+		box-shadow 6px 5px 9px -9px black
+		-webkit-transform rotate(45deg)
+		-moz-transform rotate(45deg)
+		-ms-transform rotate(45deg)
+		-o-transform rotate(45deg)
+		tranform rotate(45deg)
+
+
+// responsive
+
+@media screen and (max-width:1100px)
+	
+	article
+		width 65%
+
+	header
+		width 60%
+
+@media screen and (max-width: 1000px)
+
+	section
+		min-height 0
+		height auto
+		padding 5em 2em
+
+
+
+@media screen and (max-width: 860px)
+
+	article
+		width 80%
+
+	header
+		width 90%
+
+		& h1
+			cursor default
+
+	nav
+		position relative
+		width 100%
+		margin 0 0 1em 0
+
+
+		& img,
+		& ul
+			display inline-block
+			vertical-align middle !important
+
+		& ul
+			padding 0 1em
+
+		& li
+			display inline-block
+			margin 0 1em
+			padding 0
+
+			&:hover
+				font-weight bold
+
+@media screen and (max-width: 750px)
+
+	body
+		font-size 12px
+
+	h6
+		font-size 1em
+@media screen and (max-width: 650px)
+	
+	header
+		padding 0
+
+		& h1
+			font-size 1.5em
+
+	article
+		width 95%
+
+		& p
+			width 100%
+
+@media screen and (max-width: 610px)
+	
+	aside
+		width 100%
+
+		a
+			display inline-block
+			margin .5em .2em
+
+@media screen and (max-width: 450px)
+
+	header
+		// null
+
+		& h1
+			font-size 1.2em
+
+	article#home
+		// null
+
+		& h3
+			font-size 1.1em
+
+	nav 
+		// null
+
+		& ul
+			padding 0
+
+		& li
+			font-size 0.85em
+
+	aside
+		// null
+
+		& a
+			font-size 0.8em
+
+@media screen and (max-width: 350px)
+
+	header
+		padding 0 1em
+
+		& h1
+			font-size 1.1em
