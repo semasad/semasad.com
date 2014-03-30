@@ -1,5 +1,5 @@
-== www.semasad.com
+== www.semasad.com (online: version no Rails)
 
 Este es mi sitio web re hecho con Ruby on Rails.
 
-[www.semasad](http://www.semasad.com) (version no Rails)
+Contacto: smasad@nursoft.cl | semasad@gmail.com | www.twitter.com/semasad
