@@ -1,24 +1,5 @@
 == www.semasad.com
 
-Este es mi sitio web re hecho con Ruby on Rails. Dejo información adicional para los interesados.
+Este es mi sitio web re hecho con Ruby on Rails.
 
-* Ruby version: 4.0.2
-
-* Gemas importantes
-
-<tt>
-# Stylus
-gem "stylus", "~> 1.0.1"
-
-# jQuery
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
-
-# CoffeeScript
-gem 'coffee-rails', '~> 4.0.0'
-
-</tt>
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+[www.semasad](http://www.semasad.com) (version no Rails)
